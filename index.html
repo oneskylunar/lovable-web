@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sony WH-1000XM6 — Flagship wireless noise cancelling headphones, re-engineered for a world that never stops. Experience cinematic sound and adaptive silence.">
+  <title>Sony WH‑1000XM6 | Silence, Perfected</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- NAVBAR — Apple-style glassmorphism fixed top nav        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" id="nav-logo">WH‑1000XM6</a>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="#section-hero" class="navbar__link active" data-section="hero">Overview</a></li>
+        <li><a href="#section-engineering" class="navbar__link" data-section="engineering">Technology</a></li>
+        <li><a href="#section-anc" class="navbar__link" data-section="anc">Noise Cancelling</a></li>
+        <li><a href="#section-sound" class="navbar__link" data-section="sound">Sound</a></li>
+        <li><a href="#section-cta" class="navbar__link" data-section="cta">Buy</a></li>
+      </ul>
+      <a href="#section-cta" class="navbar__cta" id="nav-cta">
+        <span>Experience WH‑1000XM6</span>
+      </a>
+      <!-- Mobile menu toggle -->
+      <button class="navbar__menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SCROLL CONTAINER — sticky canvas + overlay content      -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <main>
+    <div class="scroll-container" id="scroll-container">
+      <!-- Sticky canvas wrapper -->
+      <div class="canvas-wrapper" id="canvas-wrapper">
+        <canvas id="product-canvas" aria-label="Sony WH-1000XM6 product animation"></canvas>
+
+        <!-- Ambient glow behind product -->
+        <div class="ambient-glow" id="ambient-glow"></div>
+
+        <!-- ─── SECTION 1: Hero / Intro (0–15%) ─── -->
+        <section class="overlay-section overlay--hero" id="section-hero" data-scroll-start="0" data-scroll-end="0.15">
+          <div class="overlay__content overlay__content--center">
+            <p class="overlay__eyebrow" id="hero-eyebrow">Sony</p>
+            <h1 class="overlay__heading overlay__heading--hero" id="hero-heading">
+              WH‑1000XM6
+            </h1>
+            <p class="overlay__subheading" id="hero-subheading">Silence, perfected.</p>
+            <p class="overlay__body overlay__body--hero" id="hero-body">
+              Flagship wireless noise cancelling, re‑engineered<br>for a world that never stops.
+            </p>
+            <div class="overlay__scroll-hint" id="scroll-hint">
+              <span>Scroll to explore</span>
+              <div class="scroll-hint__chevron">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M7 10l5 5 5-5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── SECTION 2: Engineering Reveal (15–40%) ─── -->
+        <section class="overlay-section overlay--engineering" id="section-engineering" data-scroll-start="0.15" data-scroll-end="0.40">
+          <div class="overlay__content overlay__content--left">
+            <div class="overlay__label">
+              <span class="overlay__label-line"></span>
+              <span class="overlay__label-text">Engineering</span>
+            </div>
+            <h2 class="overlay__heading" id="engineering-heading">
+              Precision‑engineered<br>for silence.
+            </h2>
+            <p class="overlay__body" id="engineering-body-1">
+              Custom drivers, sealed acoustic chambers, and optimized airflow deliver studio‑grade clarity.
+            </p>
+            <p class="overlay__body" id="engineering-body-2">
+              Every component is tuned for balance, power, and comfort—hour after hour.
+            </p>
+            <div class="overlay__stats">
+              <div class="overlay__stat">
+                <span class="overlay__stat-value">40mm</span>
+                <span class="overlay__stat-label">Custom Driver</span>
+              </div>
+              <div class="overlay__stat">
+                <span class="overlay__stat-value">32Ω</span>
+                <span class="overlay__stat-label">Impedance</span>
+              </div>
+              <div class="overlay__stat">
+                <span class="overlay__stat-value">4Hz–40kHz</span>
+                <span class="overlay__stat-label">Frequency</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── SECTION 3: Noise Cancelling (40–65%) ─── -->
+        <section class="overlay-section overlay--anc" id="section-anc" data-scroll-start="0.40" data-scroll-end="0.65">
+          <div class="overlay__content overlay__content--right">
+            <div class="overlay__label">
+              <span class="overlay__label-line"></span>
+              <span class="overlay__label-text">Noise Cancelling</span>
+            </div>
+            <h2 class="overlay__heading" id="anc-heading">
+              Adaptive noise<br>cancelling, redefined.
+            </h2>
+            <ul class="overlay__feature-list" id="anc-features">
+              <li class="overlay__feature-item">
+                <span class="overlay__feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.2"/>
+                    <circle cx="10" cy="10" r="3" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span>Multi‑microphone array listens in every direction.</span>
+              </li>
+              <li class="overlay__feature-item">
+                <span class="overlay__feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M3 10h14M10 3v14" stroke="currentColor" stroke-width="1.2"/>
+                  </svg>
+                </span>
+                <span>Real‑time noise analysis adapts to your environment.</span>
+              </li>
+              <li class="overlay__feature-item">
+                <span class="overlay__feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.2"/>
+                    <path d="M6 10c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="currentColor" stroke-width="1.2"/>
+                  </svg>
+                </span>
+                <span>Your music stays pure—planes, trains, and crowds fade away.</span>
+              </li>
+            </ul>
+            <div class="overlay__anc-badge" id="anc-badge">
+              <span class="overlay__anc-badge-label">8 Microphones</span>
+              <span class="overlay__anc-badge-sub">Dual‑sensor technology</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── SECTION 4: Sound & Upscaling (65–85%) ─── -->
+        <section class="overlay-section overlay--sound" id="section-sound" data-scroll-start="0.65" data-scroll-end="0.85">
+          <div class="overlay__content overlay__content--left">
+            <div class="overlay__label">
+              <span class="overlay__label-line"></span>
+              <span class="overlay__label-text">Sound Quality</span>
+            </div>
+            <h2 class="overlay__heading" id="sound-heading">
+              Immersive,<br>lifelike sound.
+            </h2>
+            <p class="overlay__body" id="sound-body-1">
+              High‑performance drivers unlock detail, depth, and texture in every track.
+            </p>
+            <p class="overlay__body" id="sound-body-2">
+              AI‑enhanced upscaling restores clarity to compressed audio, so every note feels alive.
+            </p>
+            <div class="overlay__sound-bars" id="sound-bars" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── SECTION 5: Reassembly & CTA (85–100%) ─── -->
+        <section class="overlay-section overlay--cta" id="section-cta" data-scroll-start="0.85" data-scroll-end="1.0">
+          <div class="overlay__content overlay__content--center">
+            <h2 class="overlay__heading overlay__heading--cta" id="cta-heading">
+              Hear everything.<br>Feel nothing else.
+            </h2>
+            <p class="overlay__subheading overlay__subheading--cta" id="cta-subheading">
+              WH‑1000XM6. Designed for focus, crafted for comfort.
+            </p>
+            <div class="overlay__cta-group" id="cta-group">
+              <a href="#" class="btn btn--primary" id="cta-primary">
+                <span>Experience WH‑1000XM6</span>
+              </a>
+              <a href="#" class="btn btn--secondary" id="cta-secondary">
+                <span>See full specs</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M6 3l5 5-5 5"/>
+                </svg>
+              </a>
+            </div>
+            <p class="overlay__micro" id="cta-micro">
+              Engineered for airports, offices, and everything in between.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- SPECS SECTION — below the scroll animation             -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="specs-section" id="specs-section">
+      <div class="specs-section__inner">
+        <h2 class="specs-section__heading">Technical Specifications</h2>
+        <div class="specs-grid">
+          <div class="spec-card">
+            <div class="spec-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="16" cy="16" r="12"/>
+                <path d="M16 8v16M10 16h12"/>
+              </svg>
+            </div>
+            <h3 class="spec-card__title">Driver Unit</h3>
+            <p class="spec-card__value">40mm</p>
+            <p class="spec-card__desc">Custom‑designed dynamic driver</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="8" y="4" width="16" height="24" rx="3"/>
+                <path d="M12 10h8M12 14h8M12 18h5"/>
+              </svg>
+            </div>
+            <h3 class="spec-card__title">Battery Life</h3>
+            <p class="spec-card__value">40hrs</p>
+            <p class="spec-card__desc">With NC on, LDAC codec</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M6 16c0-5.5 4.5-10 10-10s10 4.5 10 10"/>
+                <path d="M10 16c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+                <circle cx="16" cy="16" r="2"/>
+              </svg>
+            </div>
+            <h3 class="spec-card__title">Bluetooth</h3>
+            <p class="spec-card__value">5.3</p>
+            <p class="spec-card__desc">LDAC, AAC, SBC, LC3</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M8 24V8l8 8 8-8v16"/>
+              </svg>
+            </div>
+            <h3 class="spec-card__title">Weight</h3>
+            <p class="spec-card__value">250g</p>
+            <p class="spec-card__desc">Ultra‑lightweight carbon fibre</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 4v6M4 16h6M16 28v-6M28 16h-6"/>
+                <circle cx="16" cy="16" r="4"/>
+              </svg>
+            </div>
+            <h3 class="spec-card__title">Quick Charge</h3>
+            <p class="spec-card__value">3min</p>
+            <p class="spec-card__desc">For 3 hours of playback</p>
+          </div>
+          <div class="spec-card">
+            <div class="spec-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 20l7-7 5 5 12-12"/>
+                <path d="M20 6h8v8"/>
+              </svg>
+            </div>
+            <h3 class="spec-card__title">Frequency</h3>
+            <p class="spec-card__value">4Hz–40kHz</p>
+            <p class="spec-card__desc">Hi‑Res Audio certified</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- FOOTER                                                 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <span class="footer__brand-name">Sony</span>
+            <p class="footer__brand-tagline">Be Moved</p>
+          </div>
+          <div class="footer__columns">
+            <div class="footer__col">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Specifications</a></li>
+                <li><a href="#">Compare Models</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">User Guide</a></li>
+                <li><a href="#">Warranty</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About Sony</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Sony Corporation. All rights reserved.</p>
+          <div class="footer__legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cookie Settings</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo">WH‑1000XM6</div>
+      <div class="preloader__bar-track">
+        <div class="preloader__bar-fill" id="preloader-fill"></div>
+      </div>
+      <p class="preloader__text" id="preloader-text">Loading experience…</p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
